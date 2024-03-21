@@ -1,0 +1,31 @@
+body {
+    background-image: url('background.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#toggleButton {
+    display: block;
+    margin: 0 auto; 
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #toggleButton:hover {
+    background-color: #218838; 
+  }
+  
+  #toggleButton.btn-danger {
+    background-color: #dc3545; 
+  }
+  
+  #toggleButton.btn-danger:hover {
+    background-color: #c82333; 
+  }
