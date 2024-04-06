@@ -120,6 +120,15 @@ const characters = [
   },
 ];
 
+const homeworldsRaw = characters.map(character => character.homeworld ?? "other");
+
+const homeworldsUnique = [...new Set(homeworldsRaw)];
+
+const homeworldsLowercaseUnique = [...new Set(homeworldsRaw.map(homeworld => homeworld.toLowerCase()))];
+
+const homeworlds = homeworldsLowercaseUnique;
+
+
 function renderCharacters() {
     const characterContainer = document.getElementById('characterContainer');
     characterContainer.innerHTML = ''; 
